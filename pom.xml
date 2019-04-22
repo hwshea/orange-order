@@ -12,7 +12,6 @@
         <module>order-facade-api</module>
         <module>order-web</module>
         <module>order-dao</module>
-        <module>order-service</module>
     </modules>
 
 
