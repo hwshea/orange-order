@@ -8,7 +8,7 @@
         <version>2.1.4.RELEASE</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
-    <groupId>com.sfg</groupId>
+    <groupId>com.sfg.orange.order</groupId>
     <artifactId>order-web</artifactId>
     <version>0.1-SNAPSHOT</version>
     <name>order-web</name>
@@ -41,11 +41,28 @@
             <scope>test</scope>
         </dependency>
 
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-redis</artifactId>
+            <version>2.1.4.RELEASE</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.session</groupId>
+            <artifactId>spring-session-core</artifactId>
+            <version>2.1.5.RELEASE</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.session</groupId>
+            <artifactId>spring-session-data-redis</artifactId>
+        </dependency>
+
         <!-- dubbo && zookeeper -->
         <dependency>
             <groupId>com.alibaba</groupId>
             <artifactId>dubbo</artifactId>
-            <version>2.5.3</version>
+            <version>2.5.7</version>
             <exclusions>
                 <exclusion>
                     <groupId>org.springframework</groupId>
@@ -93,7 +110,7 @@
         </dependency>
 
         <dependency>
-            <groupId>com.sfg</groupId>
+            <groupId>com.sfg.orange.order</groupId>
             <artifactId>order-facade-api</artifactId>
             <version>0.1-SNAPSHOT</version>
         </dependency>
@@ -111,7 +128,7 @@
         </dependency>
 
         <dependency>
-            <groupId>com.sfg</groupId>
+            <groupId>com.sfg.orange.common</groupId>
             <artifactId>common-util</artifactId>
             <version>0.1-SNAPSHOT</version>
             <exclusions>
@@ -132,6 +149,36 @@
             <groupId>com.github.xiaoymin</groupId>
             <artifactId>swagger-bootstrap-ui</artifactId>
             <version>1.9.0</version>
+        </dependency>
+
+        <!--<dependency>
+            <groupId>com.sfg.orange.user</groupId>
+            <artifactId>user-facade-api</artifactId>
+            <version>0.1-SNAPSHOT</version>
+        </dependency>-->
+
+        <dependency>
+            <groupId>com.sfg.orange.user</groupId>
+            <artifactId>user-facade-api</artifactId>
+            <version>0.1-SNAPSHOT</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.sfg.orange.order</groupId>
+            <artifactId>order-facade-api</artifactId>
+            <version>0.1-SNAPSHOT</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.sfg.orange.order</groupId>
+            <artifactId>order-dao</artifactId>
+            <version>0.1-SNAPSHOT</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.sfg.orange.user</groupId>
+            <artifactId>user-facade-api</artifactId>
+            <version>0.1-SNAPSHOT</version>
         </dependency>
 
     </dependencies>

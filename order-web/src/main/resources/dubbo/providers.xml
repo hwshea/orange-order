@@ -16,4 +16,8 @@
 
     <!-- 声明需要暴露的服务接口 -->
     <dubbo:service interface="com.sfg.orange.order.facade.IOrderService" ref="orderService" timeout="10000"/>
+
+    <!-- 生成远程服务代理，可以和本地 bean 一样使用 -->
+    <dubbo:reference interface="com.sfg.orange.user.facade.IUserService" id="userService" check="false" timeout="10000"/>
+
 </beans>
