@@ -6,8 +6,8 @@
         SELECT
             o.order_no AS orderNo
         FROM
-            orange_order
-        WHERE id = #{id}
+            orange_order o
+        WHERE o.id = #{id}
     </select>
 
 </mapper>

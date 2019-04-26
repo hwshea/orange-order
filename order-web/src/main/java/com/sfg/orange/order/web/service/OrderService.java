@@ -14,9 +14,9 @@ public class OrderService implements IOrderService {
 
     @Override
     public void test() {
-        orderMapper.selectOrderNoById(1L);
-        Order order = new Order();
-        orderMapper.selectOne(order);
-        System.out.println("hehe");
+        String orderNo = orderMapper.selectOrderNoById(1L);
+        //Order order = new Order();
+        //orderMapper.selectOne(order);
+        System.out.println("hehe:" + orderNo);
     }
 }
