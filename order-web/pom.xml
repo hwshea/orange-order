@@ -116,7 +116,7 @@
         </dependency>
 
         <dependency>
-            <groupId>com.sfg</groupId>
+            <groupId>com.sfg.orange.common</groupId>
             <artifactId>common-mvc</artifactId>
             <version>0.1-SNAPSHOT</version>
             <exclusions>
