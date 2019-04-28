@@ -34,7 +34,7 @@ public class OrderController {
         orderService.test();
 
         System.out.println("user system start");
-        userService.userTestMethod("say hello");
+        //userService.userTestMethod("say hello");
         System.out.println("user system end");
         APIResponse<String> apiResponse = APIResponse.build();
         apiResponse.setData("SUCCESS");
