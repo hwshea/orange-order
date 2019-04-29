@@ -20,9 +20,9 @@ spring:
 
   datasource:
     name: test
-    url: jdbc:mysql://wpay.mega-tech.com.cn/orange?useUnicode=true&characterEncoding=UTF8&allowMultiQueries=true
-    username: feichina
-    password: xlgl1004
+    url: jdbc:mysql://localhost:3306/orange?useUnicode=true&characterEncoding=UTF8&allowMultiQueries=true
+    username: root
+    password: 123456
     # 使用druid数据源
     type: com.alibaba.druid.pool.DruidDataSource
     driver-class-name: com.mysql.jdbc.Driver
@@ -50,7 +50,7 @@ dubbo:
     owner: sfg-web-dubbo-provider
   registry:
     protocol: zookeeper
-    address: 47.92.80.199:2181
+    address: localhost:2181
   protocol:
     name: dubbo
     port: -1
